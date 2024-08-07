@@ -1,4 +1,4 @@
-import mockup from "../assets/Mockup.png";
+import mockup from "../assets/Mockup.svg";
 import trust from "../assets/trust.svg";
 import donwnload from "../assets/download.svg";
 import apple from "../assets/Apple.svg";
@@ -7,7 +7,7 @@ import play from "../assets/google_play.svg";
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="container mx-auto flex justify-between flex-wrap ">
+      <div className="container mx-auto flex md:flex-row flex-col justify-between  ">
         <div className="hero-content flex flex-col p-6 justify-center md:w-1/2 items-center">
           <div>
             <h1 className="text-5xl font-bold text-blue-700">Meet Circle AI</h1>
@@ -21,14 +21,17 @@ export default function Hero() {
                 className="hover:scale-105 cursor-pointer"
               />
               <h1>
-                Trusted By{" "}
+                <strong> Trusted By </strong>
+
                 <span className="text-gray-500">
                   25+ Startups and Investors
                 </span>
               </h1>
             </div>
             <div className="mt-6 p-3 flex rounded-xl gap-2 items-center w-fit">
-              <h1 className="text-xl font-bold">200K+ Dowloads</h1>
+              <h1 className="text-xl font-bold text-black opacity-50">
+                200K+ Dowloads
+              </h1>
               <img
                 src={donwnload}
                 alt=""
@@ -68,8 +71,8 @@ export default function Hero() {
           <img
             src={mockup}
             alt=""
-            width={700}
-            className="cursor-pointer hover:scale-105"
+            width={750}
+            className="cursor-pointer hover:scale-90 transition-all duration-100 ease-in"
           />
         </div>
       </div>

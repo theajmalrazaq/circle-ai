@@ -3,7 +3,7 @@ import menu from "../assets/menu.svg";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-around p-4">
+    <nav className="flex md:justify-around p-4 items-center justify-between">
       <div className="brand">
         <a href="/">
           <img src={brand} alt="" className="h-9" />
@@ -21,7 +21,7 @@ export default function Navbar() {
         </li>
         <li>
           <a href="/contact">
-            <button className="bg-blue-800 text-white py-2 px-3 rounded-xl">
+            <button className="bg-blue-800 text-white py-2 px-5 rounded-xl font-medium">
               Get Circle AI
             </button>
           </a>

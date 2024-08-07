@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
+import Trustsec from "../Components/TrustSec";
 import Secone from "../Components/Secone";
 export function Home() {
   return (
@@ -8,6 +9,7 @@ export function Home() {
         <Navbar />
         <Hero />
       </header>
+      <Trustsec />
       <Secone />
     </>
   );
